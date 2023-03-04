@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Signika:wght@400;500;600;700&display=swap');
+@import url('https://fonts.maateen.me/siyam-rupali/font.css');
+@import url('https://fonts.maateen.me/kalpurush/font.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap');
+
+:root {
+  --main-color: #b83806;
+  --hover-color: linear-gradient(to right, #a33903, #fbb532);
+  --background: #fdf5ee;
+  --deep-background: #e9d3c1;
+  --honey-color: #ff9600;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-size: larger;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'kalpurush', 'Poppins', 'Noto Naskh Arabic', 'kalpurush',
+    sans-serif;
+  font-size: large;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 7rem 0px;
+}
+
+p {
+  color: #5d5a58;
+}
+
+/* @media (min-width: 1400px) {
+  .container {
+    max-width: 1500px;
+  }
+} */

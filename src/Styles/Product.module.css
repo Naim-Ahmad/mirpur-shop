@@ -1,0 +1,74 @@
+.section {
+  background: var(--background);
+}
+
+.productTitle h1 {
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.productTitle > h1 > span {
+  color: var(--main-color);
+}
+
+.productItem {
+  background: var(--deep-background);
+  padding: 0;
+  margin: 0;
+}
+
+.productItem .img img {
+  height: 280px;
+  object-fit: cover;
+}
+
+.content > h2 {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+.price p {
+  font-size: 1.5em;
+}
+
+.price p span {
+  font-size: 2em;
+  color: var(--main-color);
+}
+
+.review svg {
+  fill: var(--honey-color);
+}
+
+@media screen and (min-width: 0) and (max-width: 576px) {
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .productItem {
+    width: calc(50% - 1rem);
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .productItem {
+    width: calc(25% - 1rem);
+  }
+  .productTitle {
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .price p {
+    font-size: 75%;
+  }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}

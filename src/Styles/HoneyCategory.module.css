@@ -1,0 +1,98 @@
+.HoneyCategoryTitle {
+  position: relative;
+}
+
+.HoneyCategoryTitle::after,
+.HoneyCategoryTitle::before {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 5px;
+  background: var(--main-color);
+  position: absolute;
+  bottom: -33px;
+}
+.HoneyCategoryTitle::after {
+  left: 40px;
+}
+
+.HoneyCategoryItem {
+  display: flex;
+  gap: 1rem;
+  margin-top: 5rem;
+  transition: 0.5s !important;
+}
+
+.HoneyItemText h2 {
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.honeyItemImage {
+  width: 220px;
+  padding: 2rem;
+  background: var(--background);
+  border-radius: 50%;
+  position: relative;
+}
+
+.honeyItemImage > img {
+  position: relative;
+  z-index: 3;
+}
+
+.honeyItemImage::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--hover-color);
+  transition: 0.5s;
+  z-index: 2;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.HoneyCategoryItem:hover .honeyItemImage::before {
+  opacity: 1;
+}
+
+.icon {
+  width: 300px;
+  transform: translateY(3rem);
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+  .honeyItemImage {
+    height: 123px;
+  }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/*XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+@media screen and (min-width: 0) and (max-width: 576px) {
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .HoneyCategoryItem {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .honeyItemImage {
+    width: 123px;
+    height: 123px;
+  }
+}
